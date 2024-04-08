@@ -1,0 +1,8 @@
+[
+  {
+    "deployerAddress": "0xaAE604b84621FC694c0Cd23960e9C6C9a87a97C5",
+    "contractAddress": "0x843ca41106F65A39D9e8DFE0Ad378C8B515828FB",
+    "valueSet": "Hello-chainlink",
+    "retrievedValue": "Hello-chainlink"
+  }
+]

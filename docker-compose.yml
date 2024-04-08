@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  getter-setter:
+    container_name: getter-setter
+    build: .
+    environment:
+      INFURA_PROJECT_ID: ${INFURA_PROJECT_ID}
+      PRIVATE_KEY: ${PRIVATE_KEY}
+      VALUE: ${VALUE}
+    volumes:
+      - ./data:/usr/src/app/data
+    command: >
+      sh -c "chmod +x runAndExtract.sh &&
+             ./runAndExtract.sh &&
+             cat data/output.json"
+    expose:
+      - 8545
